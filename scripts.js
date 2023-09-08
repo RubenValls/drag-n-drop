@@ -2,6 +2,14 @@ let parentNode = '';
 
 const allowDrop = (event) => {
     event.preventDefault();
+    const box = document.querySelector(`#${event.target.id}`);
+    box.classList.add('dragover');
+}
+
+const leaveDrop = (event) => {
+    event.preventDefault();
+    const box = document.querySelector(`#${event.target.id}`);
+    box.classList.remove('dragover');
 }
 
 const drag = (event) => {
