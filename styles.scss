@@ -10,6 +10,7 @@
         height: auto;
 
         .box{
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,6 +19,11 @@
             width: 150px;
             border: 4px solid black;
             border-radius: 5px;
+
+            img{
+                max-width: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
